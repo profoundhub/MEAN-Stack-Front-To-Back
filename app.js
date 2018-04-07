@@ -13,6 +13,10 @@ const port = 3000;
 // CORS Middleware
 app.use(cors());
 
+
+// Body Parser Middleware
+app.use(bodyParser.json());
+
 // Index Route
 app.get('/', (req, res) => {
         res.send('Invalid Endpoint');
