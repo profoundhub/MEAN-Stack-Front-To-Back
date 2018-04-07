@@ -10,7 +10,15 @@ const app = express();
 // Port Number
 const port = 3000;
 
+// CORS Middleware
+app.use(cors());
+
+// Index Route
+app.get('/', (req, res) => {
+        res.send('Invalid Endpoint');
+    });
+
 // Start Server
 app.listen(port, () => {
-    console.log('Server started on port ' + port);
-}); 
+        console.log('Server started on port ' + port);
+    }); 
