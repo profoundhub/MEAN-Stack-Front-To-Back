@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Register
 router.get('/register', (req, res, next) => {
-    res.send('Register');
+    res.send('REGISTER');
 });
 
 // Authenticate
