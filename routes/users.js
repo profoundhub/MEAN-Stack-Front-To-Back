@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 // Register
-router.post('/register', (req, res, next) => {
-  res.send('Register');
+router.get('/register', (req, res, next) => {
+ res.send('Register');
 });
 
 // Authenticate
