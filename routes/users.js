@@ -33,5 +33,4 @@ router.get('/profile', (req, res, next) => {
     res.send('PROFILE');
 });
 
-
 module.exports = router;
