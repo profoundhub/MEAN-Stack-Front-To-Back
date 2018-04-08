@@ -6,6 +6,7 @@ const User = require('../models/user');
 
 // Register
 router.post('/register', (req, res, next) => {
+    /*
     let newUser = new User({
         name: req.body.name,
         email: req.body.email,
@@ -20,6 +21,8 @@ router.post('/register', (req, res, next) => {
             res.json({success: true, msg:'User Registered'});
         }
     });
+    */
+   res.send('REGISTER');
 });
 
 // Authenticate
