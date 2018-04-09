@@ -18,5 +18,8 @@
     "passport-jwt": "*"
   },
   "author": "Daniel Lim",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/cli": "^1.7.4"
+  }
 }

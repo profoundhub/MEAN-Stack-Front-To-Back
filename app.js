@@ -49,5 +49,5 @@ app.listen(port, () => {
 });
 
 app.all("*", (req, res, next) => {
-
+  res.sendFile(path.resolve)
 })
