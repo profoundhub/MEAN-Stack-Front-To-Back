@@ -38,7 +38,9 @@ module.exports.addUser = function(newUser, callback) {
       /*
       if (err) {
         res.send(err);
-      } */
+        }  
+      */
+      if (err) throw err;
       newUser.password = hash;
       newUser.save(callback);
     });
