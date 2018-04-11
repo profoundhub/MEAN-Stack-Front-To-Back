@@ -1,6 +1,6 @@
 {
   "name": "mean-auth-app",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "description": "MEAN Stack with Authentication Web App",
   "main": "app.js",
   "scripts": {
@@ -8,12 +8,12 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "*",
-    "mongoose": "*",
     "bcryptjs": "*",
-    "cors": "*",
-    "jsonwebtoken": "*",
     "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
     "passport": "*",
     "passport-jwt": "*"
   },
