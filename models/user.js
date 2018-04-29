@@ -40,7 +40,7 @@ module.exports.addUser = function(newUser, callback) {
         res.send(err);
         }  
       */
-      if (err) throw err;
+      // if (err) throw err;
       newUser.password = hash;
       newUser.save(callback);
     });
