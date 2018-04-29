@@ -19,6 +19,8 @@ mongoose.connection.on('error', (err) => {
   console.log('Database error: '+err);
 });
 
+mongoose.Promise = global.Promise;
+
 const app = express();
 
 const users = require('./routes/users');

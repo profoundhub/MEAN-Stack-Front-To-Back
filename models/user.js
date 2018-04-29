@@ -9,11 +9,29 @@ const UserSchema = mongoose.Schema({
   },
   email: {
     type: String,
-    required: true
+    required: true,
+    validate: {
+      isAsync: true,
+    validator: function(v, cb) {
+        User.find({username: v}, function(err,docs){
+            cb(docs.length == 0);
+        });
+          },
+          message: 'Username already used!'
+        }
   },
   username: {
     type: String,
-    required: true
+    required: true,
+    validate: {
+      isAsync: true,
+    validator: function(v, cb) {
+        User.find({username: v}, function(err,docs){
+            cb(docs.length == 0);
+        });
+          },
+          message: 'Username already used!'
+        }
   },
   password: {
     type: String,
